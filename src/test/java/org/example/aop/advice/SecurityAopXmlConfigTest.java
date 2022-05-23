@@ -24,7 +24,7 @@ public class SecurityAopXmlConfigTest {
     @BeforeEach
     public void setup() { person = context.getBean(Person.class); }
     
-//    @Test
+    @Test
     @DisplayName("AOP-XMLConfig 정상실행 - 클라이언트 person.print() 호출")
     public void aopNoParamTest() {
         System.out.println("\n### STEP0 : 클라이언트 person.print() 호출");
@@ -35,10 +35,14 @@ public class SecurityAopXmlConfigTest {
     @DisplayName("AOP-XMLConfig 정상실행 - 클라이언트 person.print(1) 호출")
     public void aopParamTest() {
         System.out.println("\n### STEP0 : 클라이언트 Person.getTotal(1) 호출");
-        Set<Map<String, Float>> entries = person.getTotal("1").entrySet();
+        Set<Map.Entry<String, Float>> entries = person.getTotal("1").entrySet();
         System.out.println("\n### Client 결과 : " + entries);
     }
 
     @Test
-    @
+    @DisplayName("AOP-XMLConfig 클라이언트 printThrowException() 호출")
+    public void aopExceptionTest() {
+        System.out.println("\n###STEP0 : 클라이언트 printThrowException 호출");
+        person.printThrowException();
+    }
 }

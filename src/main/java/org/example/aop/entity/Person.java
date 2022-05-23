@@ -35,7 +35,7 @@ public class Person {
         HashMap<String, Float> gradeAvg = new HashMap<>();
 
         for (ExamScore examScore : examScores) {
-            Float avg = (Float) (examScore.getKor() + examScore.getEng() + examScore.getMat()) / 3;
+            Float avg = (float) (examScore.getKor() + examScore.getEng() + examScore.getMat()) / 3;
             gradeAvg.put(examScore.getGrade(), avg);
         }
 
@@ -48,7 +48,7 @@ public class Person {
         HashMap<String, Float> gradeAvg = new HashMap<>();
 
         for (ExamScore examScore : examScores) {
-            Float avg = (Float) (examScore.getKor() + examScore.getEng() + examScore.getMat()) / 3;
+            Float avg = (float) (examScore.getKor() + examScore.getEng() + examScore.getMat()) / 3;
             gradeAvg.put(examScore.getGrade(), avg);
         }
 
