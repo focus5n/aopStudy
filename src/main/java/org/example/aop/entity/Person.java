@@ -30,8 +30,33 @@ public class Person {
         printer.print(message);
     }
 
-    public HashMap<String, > getTotal(String s) {
+    public HashMap<String, Float> getTotal() {
+        ArrayList<ExamScore> examScores = this.getExamList();
+        HashMap<String, Float> gradeAvg = new HashMap<>();
+
+        for (ExamScore examScore : examScores) {
+            Float avg = (Float) (examScore.getKor() + examScore.getEng() + examScore.getMat()) / 3;
+            gradeAvg.put(examScore.getGrade(), avg);
+        }
+
+        System.out.println(gradeAvg);
+        return gradeAvg;
     }
+
+    public HashMap<String, Float> getTotal(String grade) {
+        ArrayList<ExamScore> examScores = this.getExamList();
+        HashMap<String, Float> gradeAvg = new HashMap<>();
+
+        for (ExamScore examScore : examScores) {
+            Float avg = (Float) (examScore.getKor() + examScore.getEng() + examScore.getMat()) / 3;
+            gradeAvg.put(examScore.getGrade(), avg);
+        }
+
+        System.out.println(gradeAvg);
+        return gradeAvg;
+    }
+
+    public void printThrowException() { throw new IllegalArgumentException(" => 고의로 발생시킴."); }
 
     public String getName() {
         return name;

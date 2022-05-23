@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab0e08c1-58c6-40ce-a74a-e88a1379daf9" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/advice/SecurityAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/config/config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/entity/ExamScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/ui/ColorPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/ui/MonoPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/ui/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/ui/ProxyPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/util/UtilLib.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/aop/advice/ExamScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/aop/advice/SecurityAopJavaConfigTest.java" afterDir="false" />
+    <list default="true" id="ab0e08c1-58c6-40ce-a74a-e88a1379daf9" name="변경" comment="dd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/aop/advice/AopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/aop/advice/AopTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/aop/advice/SecurityAopXmlConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/aop/advice/SecurityAopXmlConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/aop/advice/SecutiryAopJavaConfigTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/aop/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/aop/entity/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +115,14 @@
       <option name="presentableId" value="Default" />
       <updated>1653288682248</updated>
     </task>
+    <task id="LOCAL-00001" summary="dd">
+      <created>1653296813028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653296813028</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,5 +135,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dd" />
+    <option name="LAST_COMMIT_MESSAGE" value="dd" />
   </component>
 </project>
