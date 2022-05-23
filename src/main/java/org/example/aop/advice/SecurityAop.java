@@ -15,7 +15,7 @@ public class SecurityAop {
         System.out.println(UtilLib.lpad("-", 50, "-"));
     }
 
-    @Before("execution(public * co.kr.mono.aop.entity.Person.*(..))")
+    @Before("execution(public * org.example.aop.entity.Person.*(..))")
     public void logBefore(JoinPoint joinPoint) {
 
         String signatureStr = joinPoint.getSignature().toString();
@@ -27,7 +27,7 @@ public class SecurityAop {
         displayLine();
     }
 
-    @Around("execution(public * co.kr.mono.aop.entity.Person.*(..))")
+    @Around("execution(public * org.example.aop.entity.Person.*(..))")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
         String signatureStr = joinPoint.getSignature().toString();
         displayLine();
@@ -48,7 +48,7 @@ public class SecurityAop {
         }
     }
 
-    @AfterReturning(pointcut = "execution(public * co.kr.mono.aop.entity.Person.*(..))", returning = "retVal")
+    @AfterReturning(pointcut = "execution(public * org.example.aop.entity.Person.*(..))", returning = "retVal")
     public void logAfterReturning(JoinPoint joinPoint, Object retVal) {
 
         String signatureStr = joinPoint.getSignature().toString();
@@ -59,7 +59,7 @@ public class SecurityAop {
         displayLine();
     }
 
-    @AfterThrowing(pointcut = "execution(public * co.kr.mono.aop.entity.Person.*(..))", throwing = "ex")
+    @AfterThrowing(pointcut = "execution(public * org.example.aop.entity.Person.*(..))", throwing = "ex")
     public void logAfterThrowing(JoinPoint joinPoint ,IllegalArgumentException ex) {
 
         String signatureStr = joinPoint.getSignature().toString();
@@ -71,7 +71,7 @@ public class SecurityAop {
         displayLine();
     }
 
-    @After("execution(public * co.kr.mono.aop.entity.Person.*(..))")
+    @After("execution(public * org.example.aop.entity.Person.*(..))")
     public void logAfter(JoinPoint joinPoint) {
         String signatureStr = joinPoint.getSignature().toString();
         displayLine();
